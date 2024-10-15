@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM1fhX4R3fS5v0Juo0GV6F1S69D1/raW6+G5T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+         
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-background" id="Hello">
+        <nav>
+            <ul>
+                <li><a href="#Hello">Hello</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#Internship-Experiences">Internship Experiences</a></li>
+                <li><a href="#Hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hi, my name is Kaan but you can call me pontibandit</h1>
+            <p>Hacettepe University - Geomatics Engineering</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2 class="about-heading">ABOUT ME</h2>  
+            <img src="images/me.jpeg" alt="Kaan" class="profile-photo">
+            <p class="about-text">Welcome to my personal website! This site contains some information about me, along with links and a location where you can get in touch with me.</p>
+        </section>
+        
+        
+        <section id="Internship-Experiences"> <!-- Updated ID -->
+            <h2>Internship Experiences</h2> <!-- Updated heading -->
+            <div class="internship-container">
+                <div class="internship" id="internship1">
+                    <img src="images/mesci2.jpg" alt="Mescioglu Muhendislik" class="internship-cover">
+                    <h3>Mescioğlu Engineering and Consulting Inc.</h3>
+                    <p>I completed my first internship at Mescioğlu Engineering and Consulting Inc., where I worked on the production of 1/1000 and 1/5000 scale base maps, regularly conducted in Istanbul. By the end of the internship, my proficiency in MicroStation and PCI Geomatica applications significantly improved, and I gained valuable experience in teamwork.</p>
+                </div>
+                <div class="internship" id="internship2">
+                    <img src="images/ogm.jpeg" alt="Orman Genel Mudurlugu" class="internship-cover">
+                    <h3>General Directorate of Forestry (OGM)</h3>
+                    <p>For my second internship, I worked at the General Directorate of Forestry (OGM), a government institution. During this internship, I gained experience with the widely-used Netcad GIS application in Turkey. I also observed how operations are managed within a large government agency and noticed that, compared to my first internship, this experience involved more individual work.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Hobbies"> <!-- Added ID -->
+            <h2>Hobbies</h2> <!-- Updated heading -->
+            <div class="internship-container">
+                <div class="internship" id="hobby1">
+                    <img src="images/convert.jpg" alt="Basketball" class="internship-cover">
+                    <h3>Basketball</h3>
+                    <p>I enjoy playing basketball regularly with my friends, brother, and a professor. It's a great way to stay active and have fun!</p>
+                </div>
+                <div class="internship" id="hobby2">
+                    <img src="images/steam.png" alt="Computer Games" class="internship-cover">
+                    <h3>Computer Games</h3>
+                    <p>I grew up with computers and video games for as long as I can remember. After discovering the internet, I started playing online games and I still actively play today.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">  
+    <h2 class="heading">Contact<span></span></h2>  
+    <div class="personal-links">
+        <ul class="links">
+            <li><a href="https://www.linkedin.com/in/kaan-erdo%C4%9Fan-b181ba22b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/kaankaan1" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.instagram.com/pontibandit/"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:kaan.erd6@gmail.com"><i class="fas fa-envelope"></i> Email: kaan.erd6@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.3864947623815!2d32.73128667638123!3d39.865579788999376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d3474234dd5eb3%3A0x5a6c30cb932231a0!2sGeomatik%20M%C3%BChendisli%C4%9Fi!5e0!3m2!1str!2str!4v1728990527999!5m2!1str!2str" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    style="border:0; width: 100%; height: 400px;" 
+                    allowfullscreen=""
+                ></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>-Created By Kaan Erdogan-</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Smooth scrolling for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Root variables for colors and dimensions */
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+    --light-grey: #d3d3d3; /* Light grey color */
+}
+
+/* Apply box-sizing globally */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Ensure base font size is consistent across devices */
+html {
+    font-size: 100%; /* Set to 100% for better responsiveness */
+}
+
+/* Global styles */
+body {
+    background-image: url('../images/background.jpeg'); /* Main background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: var(--text-color); /* Sets text color for better contrast */
+    font-family: "Poppins", sans-serif; /* Applies Poppins globally */
+    line-height: 1.6; /* Improves readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Fullscreen header styling */
+.header-background {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Darkens the background image for better text visibility */
+    color: #fff; /* White text color */
+}
+
+/* Navigation bar styles */
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.7); /* Darkened navbar background */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Header content styles */
+.header-content img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-content img:hover {
+    transform: scale(1.1); /* Subtle zoom on hover */
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* Section padding and alignment */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--background-light);
+}
+
+/* About section styling */
+#about {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Profile photo styling */
+.profile-photo {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+/* Portfolio section styling */
+#portfolio {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better visibility */
+    color: #fff; /* Ensure text is visible */
+}
+
+.internship-container {
+    display: flex;
+    justify-content: space-around; /* Evenly space internships */
+    gap: 20px; /* Space between internship boxes */
+    margin-top: 20px;
+}
+
+.internship {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for internship boxes */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.internship h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.internship p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.internship-cover {
+    max-width: 100%; /* Ensures image fits within the internship box */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px;
+}
+
+/* Hobbies section styling */
+#Hobbies {
+    padding: 50px;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for Hobbies section */
+    color: #fff; /* Ensure text is visible */
+}
+
+/* Contact section */
+#contact h2 {
+    font-size: 2.5rem; /* Increase the font size of the Contact heading */
+    text-align: center; /* Center the heading */
+}
+
+#contact .personal-links {
+    text-align: center; /* Center-align the links */
+}
+
+#contact .personal-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#contact .personal-links li {
+    margin: 10px 0; /* Add some margin between the links */
+}
+
+/* Additional Styles */
+.about-text {
+    color: #ffffff; /* White text for About Me section */
+}
+
+.about-heading {
+    color: #ffffff; /* White color for ABOUT ME heading */
+}
+
+.internship-heading, .contact-heading {
+    color: #000000; /* Black text for Internship Experiences and Contact */
+}
+
+/* Button styling */
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.td-btn:hover {
+    background-color: #208479; /* Darker shade on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Links with hover effect */
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    .profile-photo {
+        width: 60%; /* Make profile photo larger on mobile */
+        margin: 0 auto;
+    }
+
+    .header-content img {
+        max-width: 150px;
+    }
+
+    .internship-container {
+        flex-direction: column;
+    }
+
+    .internship {
+        width: 100%; /* Full width for internship blocks on mobile */
+    }
+}
